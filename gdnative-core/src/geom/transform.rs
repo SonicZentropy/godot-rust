@@ -13,3 +13,11 @@ pub struct Transform {
 }
 
 // TODO: methods!
+impl Transform {
+    pub fn translate(origin: Vector3) -> Transform {
+        Transform {
+            basis: Basis::identity(),
+            origin
+        }
+    }
+}
