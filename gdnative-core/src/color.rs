@@ -44,6 +44,12 @@ impl Color {
     }
 }
 
+impl Default for Color {
+    fn default() -> Self {
+        Color::rgba(0.0, 0.0, 0.0, 0.0)
+    }
+}
+
 #[test]
 fn color_repr() {
     use std::mem::size_of;
